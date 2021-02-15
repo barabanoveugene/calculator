@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Calculator</h1>
+		<div class="calculetor">
+			<label for="data"><input id="data" type="text" placeholder="Enter numbers"></label>
+			<output id="result" name="result"></output>
+		</div>
+		<div class="test">
+			<h2>Result test:</h2>
+			<output id="test"><div id="mocha"></div></output>
+			<button id="start">Run test</button>
+		</div>
+	</div>
+	
+	<script src="../node_modules/mocha/mocha.js"></script>
+	<script src="../node_modules/chai/chai.js"></script>
+	<script>
+      mocha.setup('bdd');
+    </script>
+    <script type="module" src="../src/calculator.js"></script>
+    <script type="module" src="../test/calculator.test.js"></script>
+    <script>
+      document.getElementById('start').onclick = () => {
+        mocha.run();
+        mocha.checkLeaks();
+      };
+    </script>
+</body>
+</html>

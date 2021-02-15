@@ -1,0 +1,33 @@
+body {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: auto;
+}
+input[type=text] {
+	width: 30%;
+	padding: 12px 20px;
+  	margin: 8px 0;
+  	height: 35px;
+    font-size: 20px;
+	
+}
+input[type=text]:focus {
+  	border: 3px solid #555;
+}
+
+#result {
+	margin-left: 30px;
+	font-size: 20px;
+
+}
+
+#start {
+	padding: 8px 20px;
+    border-radius: 5px;
+    border: solid 2px #800000;
+    font-size: 15px;
+    background: #fff;
+}
