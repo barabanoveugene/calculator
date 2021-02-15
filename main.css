@@ -1,7 +1,6 @@
 body {
 	box-sizing: border-box;
 }
-
 .wrapper {
 	max-width: 1170px;
 	margin: auto;
@@ -12,7 +11,6 @@ input[type=text] {
   	margin: 8px 0;
   	height: 35px;
     font-size: 20px;
-	
 }
 input[type=text]:focus {
   	border: 3px solid #555;
@@ -21,7 +19,6 @@ input[type=text]:focus {
 #result {
 	margin-left: 30px;
 	font-size: 20px;
-
 }
 
 #start {
